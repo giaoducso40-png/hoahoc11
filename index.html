@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="CHEMVERSE 11 - học liệu tương tác về dẫn xuất hydrocarbon lớp 11">
+  <title>CHEMVERSE 11 | Dẫn xuất hydrocarbon</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/images/mascot-mol.webp">
+  <link rel="preload" href="assets/images/hero-chemverse.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Đi đến nội dung chính</a>
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+  <header class="topbar">
+    <button class="brand" data-route="home" aria-label="Về trang chủ">
+      <span class="brand-mark" aria-hidden="true">C</span>
+      <span><strong>CHEMVERSE 11</strong><small>Giải mã dẫn xuất hydrocarbon</small></span>
+    </button>
+    <nav class="desktop-nav" aria-label="Điều hướng chính">
+      <button data-route="dashboard">Tổng quan</button>
+      <button data-route="journey">Hành trình</button>
+      <button data-route="mindmap">Sơ đồ tư duy</button>
+      <button data-route="games">Trò chơi</button>
+      <button data-route="quiz">Luyện tập</button>
+    </nav>
+    <div class="top-actions">
+      <div class="xp-pill" title="Điểm kinh nghiệm"><span aria-hidden="true">✦</span><strong id="xpHeader">0</strong> XP</div>
+      <button class="icon-button" id="soundToggle" aria-label="Tắt âm thanh" title="Âm thanh">♪</button>
+      <button class="avatar-button" id="profileButton" aria-label="Mở hồ sơ"><span id="avatarInitial">B</span></button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <nav class="mobile-nav" aria-label="Điều hướng di động">
+    <button data-route="dashboard"><span>⌂</span>Tổng quan</button>
+    <button data-route="journey"><span>◇</span>Hành trình</button>
+    <button data-route="mindmap"><span>⌘</span>Sơ đồ</button>
+    <button data-route="games"><span>◆</span>Trò chơi</button>
+    <button data-route="quiz"><span>✓</span>Luyện tập</button>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Đóng">×</button>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+
+  <noscript><p class="noscript">Học liệu cần JavaScript để chấm bài, lưu tiến độ và chạy trò chơi.</p></noscript>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
